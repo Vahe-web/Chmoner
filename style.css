@@ -1,6 +1,14 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(247, 237, 232, 1);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header{
@@ -11,7 +19,8 @@
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    z-index: 1;
+    top: 0;
+    z-index: 10;
 }
 
 .logo{
@@ -19,191 +28,215 @@
     height: 100px;
     width: 150px;
     background-repeat: no-repeat;
-    margin: 40px 40px 0 40px;
-    width: 20%;
+    background-size: contain;
+    margin-left: 40px;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .ul1{
     display: flex;
     list-style: none;
-    margin: 40px;
-    width: 70%;
+    margin-right: 40px;
 }
 
 .ul1 li{
-    padding:30px;
+    padding: 30px;
     font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
     color: #F7EDE8;
     cursor: pointer;
 }
 
 .ul1 li:hover{
     transform: scale(1.1);
-    transition: 500ms;
+    transition: 0.5s;
 }
 
-.main-container {
+.main-container{
     background-color: rgba(108, 179, 69, 1);
     width: 100%;
-    height: 500px;
+    min-height: 100px;
+    padding-top: 140px;
+    padding-left: 100px;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-top: 100px;
+    justify-content: space-between;
 }
 
 .heading1{
-    width: 488px;
-    height: 180px;
-    top: 176px;
-    left: 100px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
+    max-width: 500px;
     font-size: 96px;
     line-height: 100px;
-    letter-spacing: 0%;
     color: #F7EDE8;
-    position: absolute;
 }
 
 .info1{
-    width: 488px;
-    height: 42px;
-    top: 386px;
-    left: 100px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold, 700;
+    margin-top: 20px;
     font-size: 21px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    position: absolute;
+    font-weight: 700;
     color: #F7EDE8;
 }
 
 .btn1{
-    position: absolute;
+    margin-top: 40px;
     width: 200px;
     height: 55px;
-    top: 470px;
-    left: 100px;
     background-color: #5740C0;
-    border: 0;
+    border: none;
     font-size: 21px;
     color: #F7EDE8;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
 
 .btn1:hover{
     background-color: #3d2c87;
-    transition: 500ms ease;
     transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .btn1:active{
     background-color: #2a1f5a;
 }
 
-.main-container2 {
-  position: relative;
-  width: 100%;
-  height: 400px;        
-  background: white;     
-  overflow: hidden;  
-     
+.main-container2{
+    width: 100%;
+    height: auto;
+    background: #F7EDE8 ;
+    position: relative;
+    overflow: hidden;
 }
 
+.wave{
+    width: 100%;
+    height: 350px;
+    z-index: -1;
 
-.wave {
-  position: absolute;
-  top: 0;        
-  left: 0;
-  width: 100%;     
-  height: 150px;  
-  transform: none; 
 }
 
-.cur-tapancik1{
-    height: 400px;
-    width: 400px;
+.main-container3{
+    width: 100%;
+    padding: 100px;
     background-color: rgba(247, 237, 232, 1);
-    opacity: 0.2;
-
 }
 
-.Drones {
-    width: 800px;
-    height: 58px;
-    top: 750px;
-    left: 100px;
+.Drones{
     font-size: 64px;
     color: #5740C0;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 100%;
-    letter-spacing: 0%;
-    position: absolute;
+    margin-bottom: 30px;
 }
 
-.info2 {
-    width: 800px;
-    height: 227px;
-    top: 870px;
-    left: 100px;
+.info2,
+.info3,
+.info4{
+    max-width: 800px;
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     line-height: 25.6px;
-    letter-spacing: 0%;
-    position: absolute;
     color: #5740C0;
+    margin-bottom: 20px;
 }
 
-.info3 {
-    width: 800px;
-    height: 227px;
-    top: 1000px;
-    left: 100px;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    line-height: 25.6px;
-    letter-spacing: 0%;
-    position: absolute;
-    color: #5740C0;
-}
-
-.info4 {
-    width: 800px;
-    height: 227px;
-    top: 1160px;
-    left: 100px;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    line-height: 25.6px;
-    letter-spacing: 0%;
-    position: absolute;
-    color: #5740C0;
-}
-
-.main-container4 {
-    background-color: #5740C0;
+.main-container4{
     width: 100%;
-    height: 663px;
-    top: 1360px;
-    position: absolute;
+    min-height: 663px;
+    background-color: #5740C0;
+    padding: 90px 0;
+    color: white;
+    text-align: center;
 }
 
-.vernagir {
-    width: 660px;
-    height: 80px;
-    top: 90px;
-    left: 435px;
-    position: absolute;
-    text-align: center;
+.vernagir{
+    margin: auto;
     font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
     color: #F7EDE8;
+    margin-bottom: 45px;
+    width: 500px;
+}
+
+.vernagir:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.heading2{
+    height: 570px;
+    width: 620px;
+    background-image: url(images/Dronenkar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.p1{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.p1:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.footer{
+    height: 800;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.f1{
+    width: 100%;
+    height: auto;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.wave2{
+    width: 100%;
+    height: 300px;
+    transform: scale(-1);
+    margin-bottom: -5px;
+}
+
+.f2{
+    height: 400px;
+    width: 100%;
+    background-color: rgba(87, 64, 192, 1);
+    text-align: center;
+    color: white;
+}
+
+.footerh1{
+    font-size: 60px;
+    padding-bottom: 30px;
+}
+
+.footerh2{
+    font-size: 25px;
+}
+
+.footericons{
+    height: 100px;
+    width: 30%;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 55px;
+    font-weight: bolder;
+}
+
+.footericons i:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.footericons a{
+    color: white;
 }
