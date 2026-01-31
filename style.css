@@ -53,7 +53,7 @@ body{
 .ul1 li:hover{
     transform: scale(1.1);
     transition: 0.5s;
-    background-color: yellow;
+    background-color: rgb(0, 255, 170);
     color: black;
     border-radius: 30px;
 }
@@ -75,6 +75,7 @@ body{
 }
 
 .info1{
+    width: 500px;
     margin-top: 20px;
     font-size: 21px;
     font-weight: 700;
@@ -91,11 +92,15 @@ body{
     color: #F7EDE8;
     font-weight: bold;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .btn1:hover{
     transform: scale(1.1);
     transition: 0.5s;
+    background-color: rgb(0, 255, 170);
+    color: black;
+    border-radius: 10px;
 }
 
 .main-container2{
@@ -114,6 +119,7 @@ body{
     width: 100%;
     padding: 100px;
     background-color: #F7EDE8;
+    margin-top: -200px;
 }
 
 .Drones{
@@ -299,4 +305,24 @@ body{
 
 .d1{
     padding: 100px;
+}
+
+.vector6 {
+    width: 170px;
+    height: 170px;
+    margin-left: 1050px;
+    margin-top: -100px;
+    background-image: url(images/Vector\ 6.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.vector7 {
+    width: 66px;
+    height: 61px;
+    margin-left: 1000px;
+    background-image: url(images/Vector\ 7.png);
+    background-repeat: no-repeat;
+    position: relative;
+    transform: rotate(340deg);
 }
