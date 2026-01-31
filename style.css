@@ -7,14 +7,14 @@
 body{
     min-height: 100vh;
     width: 100%;
-    background-color: rgba(247, 237, 232, 1);
+    background-color: #F7EDE8;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .header{
     height: 100px;
     width: 100%;
-    background-color: rgba(108, 179, 69, 1);
+    background-color: #6CB345;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,12 +25,11 @@ body{
 
 .logo{
     background-image: url(images/Layer_1-2.png);
-    height: 100px;
+    height: 70px;
     width: 150px;
     background-repeat: no-repeat;
     background-size: contain;
     margin-left: 40px;
-    margin-top: 30px;
 }
 
 .logo:hover{
@@ -54,16 +53,18 @@ body{
 .ul1 li:hover{
     transform: scale(1.1);
     transition: 0.5s;
+    background-color: yellow;
+    color: black;
+    border-radius: 30px;
 }
 
 .main-container{
-    background-color: rgba(108, 179, 69, 1);
+    background-color: #6CB345;
     width: 100%;
-    min-height: 100px;
-    padding-top: 140px;
-    padding-left: 100px;
+    padding: 160px 100px 120px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .heading1{
@@ -93,40 +94,38 @@ body{
 }
 
 .btn1:hover{
-    background-color: #3d2c87;
     transform: scale(1.1);
     transition: 0.5s;
 }
 
-.btn1:active{
-    background-color: #2a1f5a;
-}
-
 .main-container2{
     width: 100%;
-    height: auto;
-    background: #F7EDE8 ;
-    position: relative;
+    background: transparent;
     overflow: hidden;
 }
 
 .wave{
     width: 100%;
-    height: 350px;
-    z-index: -1;
-
+    height: auto;
+    display: block;
 }
 
 .main-container3{
     width: 100%;
     padding: 100px;
-    background-color: rgba(247, 237, 232, 1);
+    background-color: #F7EDE8;
 }
 
 .Drones{
     font-size: 64px;
     color: #5740C0;
     margin-bottom: 30px;
+}
+
+.Drones:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    padding-left: 53px;
 }
 
 .info2,
@@ -142,24 +141,16 @@ body{
 
 .main-container4{
     width: 100%;
-    min-height: 663px;
+    height: 640px;
     background-color: #5740C0;
     padding: 90px 0;
-    color: white;
     text-align: center;
+    color: #F7EDE8;
 }
 
 .vernagir{
-    margin: auto;
     font-size: 40px;
-    color: #F7EDE8;
     margin-bottom: 45px;
-    width: 500px;
-}
-
-.vernagir:hover{
-    transition: 0.5s;
-    transform: scale(1.1);
 }
 
 .heading2{
@@ -171,91 +162,18 @@ body{
     margin: 0 auto;
 }
 
-.p1{
-    font-size: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 
-.p1:hover{
-    transition: 0.5s;
-    transform: scale(1.1);
-}
-
-.footer{
-    height: 800;
+.main-container5{
     width: 100%;
-    margin-top: 100px;
-}
-
-.f1{
-    width: 100%;
-    height: auto;
-    background: transparent;
-    position: relative;
-    overflow: hidden;
-}
-
-
-.wave2{
-    width: 100%;
-    height: 300px;
-    transform: scale(-1);
-    margin-bottom: -5px;
-}
-
-.f2{
-    height: 400px;
-    width: 100%;
-    background-color: rgba(87, 64, 192, 1);
-    text-align: center;
-    color: white;
-}
-
-.footerh1{
-    font-size: 60px;
-    padding-bottom: 30px;
-}
-
-.footerh2{
-    font-size: 25px;
-}
-
-.footericons{
-    height: 100px;
-    width: 30%;
-    color: white;
-    font-size: 50px;
     display: flex;
-    justify-content: space-evenly;
-    margin: auto;
-    margin-top: 55px;
-    font-weight: bolder;
+    justify-content: space-between;
+    margin: 100px 0;
 }
 
-.footericons i:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.footericons a{
-    color: white;
-}
-
-.main-container5 {
-    width: 100%;
-    height: 1000px;
-    padding: 100px;
-}
-
-.vernagir2 {
-    width: 540px;
-    height: 97px;
-    top: 2213px;
+.vernagir2{
     font-size: 48px;
     color: #5740C0;
     margin-bottom: 10px;
-    left: 100px;
 }
 
 .info5{
@@ -264,44 +182,121 @@ body{
     font-weight: bold;
     line-height: 25.6px;
     color: #5740C0;
+    margin: 50px 0;
+}
+
+.footer{
+    width: 100%;
+}
+
+.f1{
+    width: 100%;
+    background: transparent;
+    overflow: hidden;
+}
+
+.wave2{
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: scaleY(-1);
+}
+
+.f2{
+    width: 100%;
+    padding: 80px 0;
+    background-color: #5740C0;
+    text-align: center;
+    color: #F7EDE8;
+    height: 450px;
+}
+
+.footerh1{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.footerh2{
+    font-size: 25px;
+}
+
+.footericons{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 50px;
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 
-.p2 {
-    font-size: 20px;
-    padding-bottom: 10px;
-    color: #5740C0;
-    margin-bottom: 10px;
+
+.footericons a{
+    color: #F7EDE8;
 }
 
-.footer2 {
+.footericons i:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.footer2{
     width: 100%;
     height: 78px;
-    top: 4234px;
     background-color: #6CB345;
-    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.info6 {
-    width: 310px;
-    height: 35px;
+.info6{
     font-size: 20px;
-    font-weight: 500;
-    left: 100px;
-    font-family: Arial, Helvetica, sans-serif;
     color: #F7EDE8;
-    position: absolute;
-    top: 28px;
+    font-size: 16px;
+    margin-left: -200px;
 }
 
-.logo2 {
-    background-image: url(images/Layer_1-3.png);
-    width: 74.7218017578125px;
-    height: 111.64305114746094px;
-    top: -85px;
-    left: 360px;
-    opacity: 1;
+.p1{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.p1:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+.p2{
+    color:#5740C0 ;
+    padding: 10px 0;
+}
+
+.p2:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    text-decoration: underline;
+    padding-left: 50px;
+}
+
+.logo2{
+    height: 100px;
+    width: 100px;
+    background: url(images/Layer_1-3.png);
+    background-repeat: no-repeat;
     color: #6CB345;
-    position: absolute;
+    margin-top: -150px;
+    margin-right: 620px;
+}
+
+.back1{
+    height: 800px;
+    width: 550px;
+    background-image: url(images/back1.png);
+    background-repeat: no-repeat;
+    margin-top: 100px;
+}
+
+.d1{
+    padding: 100px;
 }
