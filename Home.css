@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #F7EDE8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    height: 100px;
+    width: 100%;
+    background-color: rgba(87, 64, 192, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.logo{
+    background-image: url(images/Layer_1-2.png);
+    height: 70px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 40px;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.ul1{
+    display: flex;
+    list-style: none;
+    margin-right: 40px;
+}
+
+.ul1 li{
+    padding: 30px;
+    font-size: 25px;
+    color: #F7EDE8;
+    cursor: pointer;
+}
+
+.ul1 li:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: rgb(122, 92, 255);
+    color: black;
+    border-radius: 30px;
+}
+
+.main-container{
+    background-color: rgba(87, 64, 192, 1);
+    width: 100%;
+    padding: 160px 100px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading1{
+    max-width: 500px;
+    font-size: 96px;
+    line-height: 100px;
+    color: #F7EDE8;
+}
+
+.info1{
+    width: 500px;
+    margin-top: 20px;
+    font-size: 21px;
+    font-weight: 700;
+    color: #F7EDE8;
+}
+
+.btn1{
+    margin-top: 40px;
+    width: 200px;
+    height: 55px;
+    background-color:  #6CB345;
+    border: none;
+    font-size: 21px;
+    color: #F7EDE8;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn1:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: rgb(0, 255, 170);
+    color: black;
+    border-radius: 10px;
+}
+
+.heading2{
+    height: 570px;
+    width: 620px;
+    background-image: url(images/Dronenkarblue.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.main-container2{
+    width: 100%;
+    background: transparent;
+    overflow: hidden;
+}
+
+.wave{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.vector7 {
+    width: 66px;
+    height: 61px;
+    margin-left: 1050px;
+    margin-top: -100px;
+    background-image: url(images/Vector\ 7.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.vector6 {
+    width: 170px;
+    height: 170px;
+    margin-left: 1000px;
+    background-image: url(images/Vector\ 6.png);
+    background-repeat: no-repeat;
+    position: relative;
+    transform: rotate(340deg);
+}
